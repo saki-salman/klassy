@@ -1,0 +1,666 @@
+/* defalt Css */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* navbar css */
+
+.main-navbar {
+    z-index: 9;
+}
+
+.main-navbar .main-navbar-ul {
+    padding: 22px 0;
+}
+
+.main-navbar .main-navbar-ul .active-nav a {
+    color: #fb5849;
+}
+
+.main-navbar .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: poppins;
+    margin-right: 14px;
+}
+
+
+/* dropdown menu */
+
+.main-navbar-ul li {
+    position: relative;
+}
+
+.main-navbar-ul li ul {
+    list-style: none;
+    width: 209px;
+    background-color: rgba(240, 238, 238, 0.89);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s ease-in;
+    transform: scaleY(0);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-navbar-ul li ul li {
+    display: block;
+    border-bottom: .5px solid #000;
+}
+
+.main-navbar-ul li ul li:nth-child(4) {
+    border-bottom: 0;
+}
+
+.main-navbar-ul li ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: #000;
+    font-size: 15px;
+}
+
+.main-navbar-ul li:hover>ul {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-navbar-ul li ul li:hover>a {
+    background-color: #fb6355;
+}
+
+
+/* bannar-css */
+
+.banner-sec {
+    z-index: -1;
+}
+
+.bannar-content-left {
+    background: url(./img/top-left-bg.jpg);
+    width: 100%;
+    height: 488px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannar-content-left .inner-content h4 {
+    color: #fff8f7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.bannar-content-left .inner-content h6 {
+    color: #fff8f7;
+    font-size: 1.rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.bannar-content-left .inner-content .banner-inner-content-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: .5s;
+    color: #fb6355;
+}
+
+.bannar-content-left .inner-content .banner-inner-content-btn:hover {
+    background-color: #f5f3f3;
+    transform: scale(1.01);
+}
+
+.bannar-carosel {
+    width: 100%;
+}
+
+
+/* about-sec */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section .abot-header {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #fb6356;
+    margin-bottom: 18px;
+    margin-top: 38px;
+    margin-left: 43px;
+    position: relative;
+}
+
+.about-section .abot-header::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #fb6356;
+    position: absolute;
+    left: -42px;
+    top: 10px;
+}
+
+.about-section .abot-description-div {
+    width: 75%;
+    margin-bottom: 28px;
+}
+
+.about-section .abot-description-div .about-des-header {
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.about-section .about-description {
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+.abot-content-right {
+    background: url(./img/about-video-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abot-content-right a span {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fb6355;
+    text-align: center;
+    transition: .8s;
+}
+
+.abot-content-right a span:hover {
+    background-color: #c2493e;
+}
+
+.abot-content-right a span i {
+    font-size: 50px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.fa-play:before {
+    content: "\f04b";
+    font-size: 35px;
+}
+
+
+/* menu section css */
+
+.menu-section {
+    background-color: #fffafa;
+}
+
+.menu-section .menu-header {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #fb6356;
+    margin-bottom: 18px;
+    margin-top: 38px;
+    margin-left: 43px;
+    position: relative;
+}
+
+.menu-section .menu-header::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #fb6356;
+    position: absolute;
+    left: -42px;
+    top: 10px;
+}
+
+.menu-section .menu-description-div {
+    width: 35%;
+    margin-bottom: 28px;
+}
+
+.menu-section .menu-description-div .menu-des-header {
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.menu-card {
+    background: url(./img/menu-item-01.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    width: 18%;
+    margin-right: 2%;
+}
+
+.menu-card:nth-child(5) {
+    margin-right: 0;
+}
+
+.card-pricing-div {
+    width: 75px;
+    height: 75px;
+    background-color: #fb6356;
+    color: #fff;
+    text-align: center;
+}
+
+.card-pricing-div h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.menu-card-details {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fc4f40;
+    transition: .5s ease-in;
+    padding: 20px;
+}
+
+.menu-card-details h2 {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-card-details p {
+    line-height: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-card:hover .menu-card-details {
+    height: 50%;
+}
+
+.menu-card:hover .menu-card-details h2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-card:hover .menu-card-details p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* chef sec */
+
+.chef-section {
+    padding: 130px 0;
+}
+
+.chef-section .chef-header {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #fb6356;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.chef-section .chef-description-div {
+    width: 35%;
+    margin-bottom: 28px;
+}
+
+.chef-section .chef-description-div .chef-des-header {
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.chef-card {
+    border: .2px solid #000;
+    width: 31.3%;
+    margin-right: 2%;
+}
+
+.chef-card .chef-tittle {
+    color: #fb6356;
+}
+
+.chef-card .chef-description {
+    font-size: .9rem;
+    padding: 6px 0;
+}
+
+.chef-card-img1 {
+    background: url(./img/chefs-01.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 314px;
+}
+
+.chef-card-img2 {
+    background: url(./img/chefs-02.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 314px;
+}
+
+.chef-card-img3 {
+    background: url(./img/chefs-03.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 314px;
+}
+
+.card-social {
+    width: 100%;
+    height: 100%;
+    background-color: #03030383;
+    transition: .5s;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-social .social-links ul {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.card-social .social-links ul li {
+    display: inline-block;
+}
+
+.card-social .social-links ul li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+}
+
+.card-social .social-links ul li span i {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.card-social .social-links ul li :hover span {
+    background-color: #fb6356;
+}
+
+.chef-card:hover .card-social {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* contact css */
+
+.contact-sec {
+    padding: 100px 0;
+    background: url(./img/reservation-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contact-sec .contact-header {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 18px;
+    margin-top: 38px;
+    margin-left: 43px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.contact-sec .contact-header::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: -42px;
+    top: 10px;
+}
+
+.contact-sec .contact-description-div {
+    margin-bottom: 28px;
+}
+
+.contact-description-div .contact-des-header {
+    font-weight: 800;
+    font-size: 1.95rem;
+}
+
+.contact-sec .contact-description-div .menu-des-header {
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.contact-description-div p {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    margin-top: 26px;
+}
+
+.contact-card {
+    position: relative;
+}
+
+.contact-icon-div span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fb6356;
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-icon-div span i {
+    color: #fff;
+    line-height: 80px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.contact-icon-div span i {
+    color: #fff;
+    line-height: 80px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.form-div {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 524px;
+    margin-top: 30px;
+}
+
+.form-heading {
+    margin: 20px 0;
+}
+
+.form-heading h1 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.form-div form input {
+    margin-bottom: 20px;
+}
+
+.form-div form textarea {
+    margin-bottom: 20px;
+}
+
+.form-div form .reservation-brn {
+    background-color: #fb5849;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+
+.form-div form .reservation-brn:hover {
+    background-color: #e95043;
+}
+
+
+/* meal-ofer-sec */
+
+.meal-ofer-sec {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.meal-ofer-sec .meal-offer-heading {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #fb6356;
+    letter-spacing: 4px
+}
+
+.meal-ofer-sec .meal-heading-div {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.meal-ofer-sec .meal-heading-div h1 {
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+.menu-tab {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.menu-tab .menu h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.offer-details h2 {
+    text-align: left;
+    padding: 0 20px;
+    font-size: 23px;
+}
+
+.offer-details p {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.img-offer {
+    width: 154px;
+}
+
+.img-offer img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.menu-wrapper {
+    margin-bottom: 30px;
+}
+
+.offer-rate {
+    background-color: #fb6356;
+    width: 67px;
+    height: 66px;
+    border-radius: 6px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+}
+
+.offer-rate h4 {
+    color: #fff;
+    font-size: 17px;
+}
+
+.menu-table-wrapper {
+    margin-top: 60px;
+}
+
+
+/* footer-section */
+
+.footer-section {
+    background-color: #fb6356;
+    padding: 50px 0;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons ul li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.social-icons ul li a i {
+    font-size: 24px;
+    line-height: 50px;
+    color: #fb6356;
+}
